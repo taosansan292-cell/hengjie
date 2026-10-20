@@ -1,0 +1,48 @@
+/* 1018 PDF review: compact first screen and persistent pass access. */
+html{scroll-padding-bottom:90px}
+body{padding-bottom:0}
+.app,.activity-page{padding-bottom:calc(80px + env(safe-area-inset-bottom,0px))}
+.carousel{height:clamp(164px,28svh,240px);touch-action:pan-y}
+.topline{padding:13px 18px}
+.brandline{font-size:12px}
+.brandline small{font-size:10px;margin-top:2px}
+.mini-pill{font-size:10px;padding:4px 9px}
+.slide-copy{left:20px;right:20px;bottom:36px}
+.slide-copy h1,.slide.two .slide-copy h1,.slide.three .slide-copy h1{font-size:28px;line-height:1.14;letter-spacing:0}
+.slide.three .slide-copy h1{font-size:25px}
+.slide-copy p{display:none}
+.slide-copy .date{font-size:11px;margin-top:12px;letter-spacing:.04em}
+.dots{bottom:4px;gap:0}
+.dot{width:38px;height:30px;background:transparent;position:relative}
+.dot:after{content:"";position:absolute;left:9px;right:9px;top:14px;height:2px;background:rgba(255,255,255,.5)}
+.dot.active{background:transparent}
+.dot.active:after{background:#fff}
+.carousel-toggle{position:absolute;right:10px;bottom:1px;width:36px;height:36px;display:grid;place-items:center;border:0;background:transparent;color:#fff}
+.carousel-toggle svg{width:18px;height:18px}
+.notice{min-height:34px;padding:9px 16px;font-size:11px;gap:7px;line-height:16px}
+.entry-wrap{padding:20px 16px 8px}
+.entry-wrap .section-head{margin-bottom:14px}
+.entry-wrap .section-head h2{font-size:24px;line-height:1.2}
+.entry-wrap .section-head h2 span{font-size:14px;margin-left:7px}
+.entry-wrap .section-head h2:after{width:52px;margin-top:6px;border-bottom-width:2px}
+.entry-wrap .section-head p{margin-top:8px;font-size:12px;line-height:18px}
+.entry{height:88px;padding:19px 18px;margin-bottom:10px;overflow:hidden}
+.entry:last-child{margin-bottom:0}
+.entry strong{font-size:21px}
+.entry span{font-size:12px;margin-top:7px}
+.entry .entry-word{font-size:67px;margin-top:0;bottom:-10px;right:14px}
+.entry em{right:12px;top:9px;font-size:9px}
+.guide{padding-top:34px}
+.fixed-actions{position:fixed;left:50%;bottom:0;transform:translateX(-50%);width:min(100%,480px);z-index:4;padding:11px 16px calc(11px + env(safe-area-inset-bottom,0px));border-top:1px solid var(--line);background:#fff}
+.fixed-actions button{display:block;width:100%;min-height:46px;border:0;background:var(--navy);color:#fff;font-weight:600;letter-spacing:.05em;border-radius:3px}
+.fixed-actions button:hover,.submit:hover{background:#064d89}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,.carousel:focus-visible{outline:3px solid #e7b85b;outline-offset:3px}
+.signup input,.signup select{font-size:16px;min-height:46px}
+dialog{max-height:calc(100dvh - 28px);overflow:auto}
+.form-head{padding-right:54px}
+.close{min-width:44px;min-height:44px;right:4px;top:3px}
+.activity-nav button{min-width:44px;min-height:44px}
+.event-card{scroll-margin-top:18px}
+@media(max-width:360px){.section-head h2{font-size:26px}.section-head h2 span{font-size:14px;margin-left:6px}.event-card{gap:12px}.event-detail{gap:8px;padding:8px}.event-card h3{font-size:16px}.event-row{gap:4px}.notice{font-size:10px}.entry-wrap .section-head p{font-size:11px}}
+@media(max-height:600px) and (orientation:portrait){.entry-wrap{padding-top:16px}.entry-wrap .section-head{margin-bottom:12px}.entry-wrap .section-head p{display:none}.entry{height:82px}.entry-wrap .section-head h2{font-size:23px}.guide{padding-top:30px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.slides{transition:none}}
